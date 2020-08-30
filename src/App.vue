@@ -16,9 +16,11 @@ export default {
 // 并且没有加scoped
 // 注：如果有样式时，应该放在#app上面引入，不然引入不成功！
 // @import改成<style src=""></style>引入外部样式
+//@import "../static/css/animate.min.css";
 <style>
-@import "../static/css/animate.min.css";
-
+body{
+  margin:0px;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -6,6 +6,8 @@
 
 ``` bash
 # install dependencies
+# npm install --save axios element-ui
+# 创建项目时增加sass支持，注意
 npm install
 
 # serve with hot reload at localhost:8080
