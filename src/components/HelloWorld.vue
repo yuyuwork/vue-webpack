@@ -18,6 +18,7 @@
 //http://shouce.jb51.net/velocity/
 import { velocity } from '../../static/js/velocity.min.js'
 
+
 //想在Vue组件中想要引入Velocity函数，那么要在Velocity加密算法的js脚本的最后，使用如下代码，将Velocity函数导出
 //注：外部脚本js不要放在components文件夹下，否则会一直报错。可以在src文件夹下新建一个js文件夹，然后将外部js脚本放在这个文件夹下，然后就可以在其他Vue组件中引入该js脚本
 //在组件中使用import { 函数名 } from 外部脚本名来从外部js脚本中导入我们需要使用的函数
@@ -29,6 +30,13 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  created(){
+    // axios.post(`${url}/login`).then(resposne =>{
+    
+    // }).catch(error =>{
+     
+    // })
   }
 }
 

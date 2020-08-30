@@ -5,11 +5,13 @@ import HelloWorld from '@/components/HelloWorld'
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
-  ]
+    routes: [{
+        path: '/',
+        name: 'HelloWorld',
+        component: HelloWorld
+    }]
 })
+
+export function serverUrl() {
+    return 'http://localhost:3000';
+}
