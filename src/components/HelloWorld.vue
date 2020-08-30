@@ -1,7 +1,6 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
     <ul>
       <li>
         <a
@@ -11,86 +10,30 @@
           Core Docs
         </a>
       </li>
-      <li>
-        <a
-          href="https://forum.vuejs.org"
-          target="_blank"
-        >
-          Forum
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          Community Chat
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-        >
-          Twitter
-        </a>
-      </li>
-      <br>
-      <li>
-        <a
-          href="http://vuejs-templates.github.io/webpack/"
-          target="_blank"
-        >
-          Docs for This Template
-        </a>
-      </li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li>
-        <a
-          href="http://router.vuejs.org/"
-          target="_blank"
-        >
-          vue-router
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vuex.vuejs.org/"
-          target="_blank"
-        >
-          vuex
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vue-loader.vuejs.org/"
-          target="_blank"
-        >
-          vue-loader
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
-          awesome-vue
-        </a>
-      </li>
     </ul>
   </div>
 </template>
 
 <script>
+//http://shouce.jb51.net/velocity/
+import { velocity } from '../../static/js/velocity.min.js'
+
+//想在Vue组件中想要引入Velocity函数，那么要在Velocity加密算法的js脚本的最后，使用如下代码，将Velocity函数导出
+//注：外部脚本js不要放在components文件夹下，否则会一直报错。可以在src文件夹下新建一个js文件夹，然后将外部js脚本放在这个文件夹下，然后就可以在其他Vue组件中引入该js脚本
+//在组件中使用import { 函数名 } from 外部脚本名来从外部js脚本中导入我们需要使用的函数
+//在Vue组件中正常调用Velocity函数
 export default {
   name: 'HelloWorld',
+  velocity,
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
   }
+}
+
+var encode = function (string) {
+  // 这里是Velocity的具体实现算法
 }
 </script>
 
